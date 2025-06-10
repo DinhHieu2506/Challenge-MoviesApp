@@ -1,0 +1,65 @@
+.movie-list { 
+  
+  display: flex;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  &__card {
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  width: 25%;
+  background-color: black;
+  position: relative;
+
+}
+ &__poster {
+    overflow: hidden;
+    
+    
+  }
+   img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__title {
+        cursor: pointer;
+        position: absolute;
+        padding: 20px;
+        left: 0;
+        bottom: 10%;
+   
+    }
+
+    &__footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 8px;
+    }
+
+    &__release-year{
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+
+    &__rating {
+        font-size: 1.25rem;
+        padding: 1rem;
+        color: #f6c700;
+        cursor: pointer;
+        border-radius: 50%;
+      &:hover{
+        background-color: rgba(246, 255, 255, 0.2);
+      }  
+    }
+ 
+}

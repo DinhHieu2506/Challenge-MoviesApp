@@ -1,0 +1,42 @@
+.navbar-detail {
+ display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    background: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: .5rem 2rem;
+
+    &__logo {
+        cursor: pointer;
+        padding: 12px 12px;
+        
+    }  
+
+    &__arrow {
+       display: inline-flex;
+       align-items: center;;
+       cursor: pointer;
+       color: white;
+       border-radius: 50%;
+       padding: 0.5rem;
+    
+         svg {
+        fill: currentColor;
+        width: 30px;
+        display: block;
+    }
+    }
+  
+}
+
+.movie-detail {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1280px;
+    color: white;
+    justify-content: space-between;
+}
