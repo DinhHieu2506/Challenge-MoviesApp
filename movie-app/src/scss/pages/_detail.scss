@@ -22,11 +22,18 @@
        color: white;
        border-radius: 50%;
        padding: 0.5rem;
+       justify-content: center;
     
          svg {
         fill: currentColor;
-        width: 30px;
+        width: 35px;
         display: block;
+        height: 35px;
+        
+    }
+      &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+
     }
     }
   
@@ -39,4 +46,88 @@
     max-width: 1280px;
     color: white;
     justify-content: space-between;
+
+    &__info{
+        padding: 0 2rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        
+    }
+    &__title {
+        font-size: 2.4rem;
+        padding-right: .5rem;
+        margin-bottom: 10px;
+    }
+
+    &__subinfo {
+        display: flex;
+        margin: 1rem 0;
+        justify-content: flex-start;
+        font-size: .8rem;
+        opacity: .7;
+        color: white;
+
+        div {
+        padding: 0 1rem;
+        border-right: 2px solid hsla(0, 0%, 100%, .5);
+        }
+
+        div:first-child {
+            padding-left: 0;
+        }
+    }
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        
+    }
+    &__divider {
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.12);
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    &__medata {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &__medata-title {
+        width: 120px;
+        font-weight: 700;
+        margin-right: 50px
+        
+    }
+
+    &__medata-value {
+        opacity: .7;
+        flex: 1;
+         p {
+            margin: 0;
+           
+         }
+    
+        
+    }
+
+    &__rating-container {
+        font-size: 1.5rem;
+        color: #e4bb24;
+
+        i{
+            font-size: .7rem;
+            opacity: .5;
+            color: #fff;
+        }
+    }
+
+  
 }
