@@ -12,31 +12,35 @@
   color: white;
   width: 25%;
   background-color: black;
-  position: relative;
+  
 
 }
  &__poster {
     overflow: hidden;
+    position: relative;
     
     
   }
    img {
       width: 100%;
-      height: auto;
+      height: 400px;
       cursor: pointer;
       object-fit: cover;
-      transition: all 0.3s ease-in-out;
+      transition: all .5s ease-in-out;
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 
     &__title {
         cursor: pointer;
         position: absolute;
-        padding: 20px;
+        padding: 1rem;
         left: 0;
-        bottom: 10%;
+        bottom:0;
+        right: 0;
+        background: linear-gradient(0deg,#000,transparent);
+        
    
     }
 
