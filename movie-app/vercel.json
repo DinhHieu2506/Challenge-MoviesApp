@@ -1,4 +1,19 @@
 
-  {"rewrites": [{ "source": "/(.*)", "destination": "/" }]}
+{
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/detail", "dest": "/detail.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
+
  
 
